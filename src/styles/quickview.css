@@ -1,0 +1,19 @@
+/* Quick View: works with no JS via the #quick-view URL fragment. */
+.qv { display: none; }
+.topbar__qv--close { display: none; }
+body:has(#quick-view:target) .rich,
+body:has(#quick-view:target) .topbar__nav,
+body:has(#quick-view:target) .topbar__qv--open { display: none; }
+body:has(#quick-view:target) .qv { display: block; }
+body:has(#quick-view:target) .topbar__qv--close { display: inline-flex; }
+
+.qv { padding: var(--space-5) var(--space-3); }
+.qv__inner { max-width: 50rem; margin: 0 auto; }
+.qv h1 { font-size: var(--step-2); }
+.qv h2 { font-size: var(--step-0); text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-1); margin: var(--space-4) 0 var(--space-2); font-family: var(--font-body); }
+.qv h3 { font-size: var(--step--1); font-family: var(--font-body); margin-top: var(--space-2); }
+.qv ul { margin: var(--space-1) 0 var(--space-2); padding-left: 1.2em; }
+.qv__item p { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0 var(--space-3); }
+.qv__date { font-family: var(--font-mono); font-size: var(--step--1); color: var(--color-muted); }
+.qv__contact { color: var(--color-muted); }
+.qv__back { margin-bottom: var(--space-3); }

@@ -1,0 +1,898 @@
+{
+  "_meta": {
+    "sources": [
+      "Mehta_Anish_Resume_Hopkins_Research copy.pdf",
+      "College_ Supplemental Materials - Abstracts - Google Docs.pdf",
+      "LinkedIn experience entries pasted by Anish (2026-10-16)"
+    ],
+    "pending": [
+      "LinkedIn merge (optional)",
+      "Media: headshot, sax clip, photos (content/media/)",
+      "Confirm tagline and looking_for wording"
+    ],
+    "review_notes": [
+      "Intro translations (Hindi, Spanish, Catalan) are Claude drafts. Anish must check each one before it goes live."
+    ],
+    "decisions": [
+      "Audience: general. Lead with public health and science.",
+      "Hosting: GitHub Pages.",
+      "Concord Review mentions removed (paper not accepted); the paper itself stays.",
+      "'Currently...' wording changed to past tense.",
+      "Approved spellings: Jim Seeley, PSAT/NMSQT. Johns Hopkins shown as Class of 2030.",
+      "When the resume and an abstract disagree, the abstract wins (Anish, 2026-10-16).",
+      "Venezuela paper is 7,500 words; British colonialism paper is 10,000 words (from abstracts).",
+      "PCOS: the diagnosis model was adopted. The explainer shows clinical + genetic data mapped to Reproductive vs Metabolic subtypes; the abstract's genetics-only finding stays in the reading room.",
+      "Glioblastoma graphic approved for the public site (2026-10-16)."
+    ],
+    "drafts_note": "Anything with \"draft\": true shows in `npm run dev` with a DRAFT badge and is left out of the published build until Anish approves it.",
+    "privacy": "Private fields (phone) live in content/private.json, which is gitignored and never rendered."
+  },
+  "person": {
+    "name": "Anish Mehta",
+    "tagline": "Chemistry and public health student at Johns Hopkins. I built an AI model for PCOS diagnosis at Mount Sinai, founded two nonprofits that taught tens of thousands of students for free, and played lead saxophone in a Latin jazz big band.",
+    "location": {
+      "display": "New York / Baltimore",
+      "full": "Scarsdale, New York",
+      "private": false
+    },
+    "email": "mehtaanish101@gmail.com",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/anish-mehta-b74821279/"
+    },
+    "languages": [
+      "English",
+      "Hindi",
+      "Spanish",
+      "Catalan"
+    ],
+    "looking_for": "Open to research assistant roles, summer programs and scholarships in science and public health.",
+    "focus_areas": [
+      "Public Health",
+      "Chemistry",
+      "AI in Medicine",
+      "Education Access",
+      "History & Languages",
+      "Jazz"
+    ],
+    "language_greetings": [
+      {
+        "language": "English",
+        "lang": "en",
+        "greeting": "Hello"
+      },
+      {
+        "language": "Hindi",
+        "lang": "hi",
+        "greeting": "नमस्ते"
+      },
+      {
+        "language": "Spanish",
+        "lang": "es",
+        "greeting": "Hola"
+      },
+      {
+        "language": "Catalan",
+        "lang": "ca",
+        "greeting": "Bon dia"
+      }
+    ],
+    "intro_translations": [
+      {
+        "lang": "en",
+        "label": "English",
+        "text": "Chemistry and public health student at Johns Hopkins. I built an AI model for PCOS diagnosis at Mount Sinai, founded two nonprofits that taught tens of thousands of students for free, and played lead saxophone in a Latin jazz big band."
+      },
+      {
+        "lang": "hi",
+        "label": "हिन्दी",
+        "draft": true,
+        "text": "मैं जॉन्स हॉपकिन्स में रसायन विज्ञान और सार्वजनिक स्वास्थ्य का छात्र हूँ। मैंने माउंट सिनाई में PCOS के निदान के लिए एक AI मॉडल बनाया, दो गैर-लाभकारी संस्थाएँ शुरू कीं जिन्होंने हज़ारों छात्रों को मुफ़्त में पढ़ाया, और एक लैटिन जैज़ बिग बैंड में लीड सैक्सोफ़ोन बजाया।"
+      },
+      {
+        "lang": "es",
+        "label": "Español",
+        "draft": true,
+        "text": "Soy estudiante de química y salud pública en Johns Hopkins. Desarrollé un modelo de IA para el diagnóstico del SOP (PCOS) en Mount Sinai, fundé dos organizaciones sin fines de lucro que enseñaron gratis a decenas de miles de estudiantes y toqué el saxofón principal en una big band de jazz latino."
+      },
+      {
+        "lang": "ca",
+        "label": "Català",
+        "draft": true,
+        "text": "Soc estudiant de química i salut pública a Johns Hopkins. Vaig desenvolupar un model d'IA per al diagnòstic de la SOP (PCOS) a Mount Sinai, vaig fundar dues organitzacions sense ànim de lucre que van ensenyar gratuïtament desenes de milers d'estudiants i vaig tocar el saxòfon principal en una big band de jazz llatí."
+      }
+    ]
+  },
+  "education": [
+    {
+      "school": "Johns Hopkins University",
+      "location": "Baltimore, MD",
+      "start": "2026",
+      "end": null,
+      "degrees": [
+        "B.S. Chemistry",
+        "B.A. Public Health Studies"
+      ],
+      "display_dates": "Class of 2030"
+    },
+    {
+      "school": "Scarsdale High School",
+      "location": "Scarsdale, NY",
+      "start": "2022",
+      "end": "2026",
+      "gpa": "3.98/4.0"
+    }
+  ],
+  "research": [
+    {
+      "org": "Johns Hopkins Medicine — Lopez-Bertoni Lab",
+      "location": "Baltimore, MD",
+      "role": "Research Intern",
+      "start": "2026",
+      "end": null,
+      "tags": [
+        "research",
+        "science",
+        "health"
+      ],
+      "bullets": [
+        "Using R to analyze gene expression across glioblastoma cohorts, identifying upregulated genes shared across datasets",
+        "Building receptor-specific correlation matrices to map gene networks associated with TGFBR1 and TGFBR2",
+        "Applying single-sample gene set enrichment analysis (ssGSEA) to distinguish shared cancer-related programs from receptor-specific metabolic pathways",
+        "Developing candidate genomic signatures to guide future TGFBR1 and TGFBR2 knockout experiments"
+      ]
+    },
+    {
+      "org": "Icahn School of Medicine at Mount Sinai",
+      "location": "New York, NY",
+      "role": "Intern to Dr. Andrea Dunaif, Endocrinology Chief",
+      "start": "2023",
+      "end": "2026",
+      "tags": [
+        "research",
+        "science",
+        "ai"
+      ],
+      "bullets": [
+        "Developed AI model in R to improve Polycystic Ovary Syndrome (PCOS) diagnosis/subtype classification",
+        "Model adopted across department, replacing prior system for clinical research"
+      ]
+    },
+    {
+      "org": "University of Michigan — LSA Department of History",
+      "location": "Ann Arbor, MI",
+      "role": "Research Intern to Dr. Mrinalini Sinha",
+      "start": "2024",
+      "end": "2026",
+      "tags": [
+        "research",
+        "history"
+      ],
+      "bullets": [
+        "Analyzed 500+ archive publications on Indian diaspora in the Caribbean and South Africa",
+        "Authored a 10k-word research paper"
+      ]
+    },
+    {
+      "org": "Independent Spanish Study",
+      "location": "Scarsdale, NY",
+      "role": "Student",
+      "start": "2024",
+      "end": "2025",
+      "tags": [
+        "research",
+        "languages"
+      ],
+      "bullets": [
+        "Wrote 7,500-word paper in Spanish about why democracy hasn't survived in Venezuela",
+        "Analyzed and read primary and secondary sources fully in Spanish"
+      ]
+    },
+    {
+      "org": "Independent History Study",
+      "location": "Scarsdale, NY",
+      "role": "Student",
+      "start": "2024",
+      "end": "2025",
+      "tags": [
+        "research",
+        "history"
+      ],
+      "bullets": [
+        "Wrote 10,000-word research paper about the implications of British colonialism on modern-day Indian religious tensions"
+      ]
+    },
+    {
+      "org": "Independent Art Study",
+      "location": "Scarsdale, NY",
+      "role": "Student",
+      "start": "2024",
+      "end": "2025",
+      "tags": [
+        "research",
+        "history",
+        "service"
+      ],
+      "bullets": [
+        "Investigated Scarsdale's history of slavery by examining historical landmarks, including the Wayside Cottage",
+        "Hosted Witness Stones presentation to honor landmarks that had slaves during the 18th and 19th centuries"
+      ]
+    },
+    {
+      "org": "Independent Spanish Literature Study",
+      "location": "Scarsdale, NY",
+      "role": "Student",
+      "start": "2025",
+      "end": "2026",
+      "tags": [
+        "research",
+        "languages",
+        "history"
+      ],
+      "bullets": [
+        "Wrote research paper fully in Spanish on the history of the Catalan independence movement"
+      ]
+    }
+  ],
+  "service": [
+    {
+      "org": "Baltimore City Health Department",
+      "location": "Baltimore, MD",
+      "role": "Spanish–English Clinical Interpreter (Part-time)",
+      "start": "2026",
+      "end": null,
+      "tags": [
+        "service",
+        "health",
+        "languages"
+      ],
+      "bullets": [
+        "Interpreting between Spanish-speaking patients and English-speaking clinicians in immunization and STI clinics",
+        "Facilitating patient–provider conversations about symptoms, diagnoses, testing, and treatment plans",
+        "Helping Spanish-speaking patients schedule appointments and navigate clinic services",
+        "Supporting both pediatric and geriatric patients in their native language"
+      ]
+    },
+    {
+      "org": "Science Chronicles, Inc.",
+      "location": "Westchester, NY",
+      "role": "Founder & Editor-in-Chief",
+      "start": "2022",
+      "end": null,
+      "tags": [
+        "service",
+        "leadership",
+        "science"
+      ],
+      "bullets": [
+        "Taught STEM free to 30k+ global students; 100+ STEM articles published, 160k+ reads",
+        "Distributed $350k+ in free SAT/ACT & AP prep; led 200+ staff"
+      ]
+    },
+    {
+      "org": "Language Gurus, Inc.",
+      "location": "Westchester, NY",
+      "role": "Founder & CEO",
+      "start": "2023",
+      "end": null,
+      "tags": [
+        "service",
+        "leadership",
+        "languages"
+      ],
+      "bullets": [
+        "Provided free native language instruction to 20k+ first-gen South Asian students",
+        "Distributed $75k+ in educational materials to students and educational nonprofits"
+      ]
+    },
+    {
+      "org": "Memorial Sloan Kettering Cancer Center",
+      "location": "New York, NY",
+      "role": "Patient Care Volunteer",
+      "start": "2022",
+      "end": "2026",
+      "tags": [
+        "service",
+        "health"
+      ],
+      "bullets": [
+        "Assisted 1k+ cancer patients with hospital transport/logistics; communicated effectively in English, Hindi, Spanish, and Catalan"
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "org": "Scarsdale High School Government, Capital Projects Committee",
+      "location": "Scarsdale, NY",
+      "role": "Class President, School Secretary",
+      "start": "2022",
+      "end": "2026",
+      "tags": [
+        "leadership"
+      ],
+      "bullets": [
+        "Raised $80,000+ for nonprofits and initiated a \"Hot Topics\" forum on political issues",
+        "Sole student representative on $40M infrastructure bond committee"
+      ]
+    },
+    {
+      "org": "Scarsdale Board of Education",
+      "location": "Scarsdale, NY",
+      "role": "Ex-Officio Student Representative",
+      "start": "2025",
+      "end": "2026",
+      "tags": [
+        "leadership"
+      ],
+      "bullets": [
+        "First-ever student member of the Board of Education in Scarsdale's history",
+        "Advanced policies in mental health, student wellness, and green energy"
+      ]
+    },
+    {
+      "org": "Scarsdale Speech & Debate; Extempify, Inc.",
+      "location": "Scarsdale, NY and San Francisco, CA",
+      "role": "Captain & Coach",
+      "start": "2022",
+      "end": "2026",
+      "tags": [
+        "debate",
+        "leadership"
+      ],
+      "bullets": [
+        "Developed public speaking curriculum for underclassmen; coached 30+ students to State/National finals",
+        "Led team to win 2025 NY State Speech Championship"
+      ]
+    },
+    {
+      "org": "Scarsdale Indian Heritage Club",
+      "location": "Scarsdale, NY",
+      "role": "President",
+      "start": "2024",
+      "end": "2026",
+      "tags": [
+        "leadership",
+        "culture"
+      ],
+      "bullets": [
+        "Hosted school-wide cultural events for Indian holidays, such as Holi and Diwali; improved club membership 10x during tenure",
+        "Spearheaded guest speaker events, including an Indian Partition survivor interview"
+      ]
+    },
+    {
+      "org": "Scarsdale Social Justice Club",
+      "location": "Scarsdale, NY",
+      "role": "President",
+      "start": "2023",
+      "end": "2026",
+      "tags": [
+        "leadership",
+        "service"
+      ],
+      "bullets": [
+        "Organized initiatives to end stigma around \"invisible disabilities,\" such as ADHD",
+        "Hosted presentations and guest speakers on the history of slavery in Scarsdale"
+      ]
+    }
+  ],
+  "music_and_work": [
+    {
+      "org": "Belongó | Afro Latin Jazz Alliance (ALJA)",
+      "location": "New York, NY",
+      "role": "Lead Saxophonist",
+      "start": "2022",
+      "end": "2026",
+      "tags": [
+        "music"
+      ],
+      "bullets": [
+        "First-chair saxophonist in Fat Cats Big Band under 9-time GRAMMY winner Arturo O'Farrill",
+        "Mentored by GRAMMY winner Jim Seeley"
+      ]
+    },
+    {
+      "org": "Pizza N' Bites",
+      "location": "Westchester, NY",
+      "role": "Pizzaiolo & Kitchen Team Member",
+      "start": "2024",
+      "end": "2026",
+      "tags": [
+        "work"
+      ],
+      "bullets": [
+        "Prepared fresh pizza and prepped dough, sauce, and toppings for service; maintained kitchen cleanliness and operational readiness",
+        "Took phone call orders and ran cashier transactions"
+      ]
+    }
+  ],
+  "honors": [
+    {
+      "category": "Speech & Debate",
+      "title": "2x National Finalist (6th & 7th) — University of Kentucky Tournament of Champions",
+      "years": [
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "category": "Speech & Debate",
+      "title": "2x Top 20 — National Speech and Debate Association National Tournament",
+      "years": [
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "category": "Speech & Debate",
+      "title": "2x New York State Championship Runner-up — Extemporaneous Speaking",
+      "years": [
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "category": "Speech & Debate",
+      "title": "5th Place in Nation — Yale University Invitational",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "category": "Speech & Debate",
+      "title": "8th Place in Nation — The Princeton Classic",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "category": "Science & Research",
+      "title": "Top 50 in Nation — USA Biology Olympiad (USABO), Certificate of Excellence",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "category": "Science & Research",
+      "title": "3rd in State — Somers Science Fair",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "category": "Academic Distinction",
+      "title": "National Merit Semifinalist — PSAT/NMSQT (1520/1520)",
+      "years": [
+        "2025"
+      ]
+    },
+    {
+      "category": "Academic Distinction",
+      "title": "AP Scholar with Distinction",
+      "years": [
+        "2025"
+      ]
+    },
+    {
+      "category": "Academic Distinction",
+      "title": "Interlochen Arts Academy–New York Philharmonic Scholarship — Saxophone Performance",
+      "years": [
+        "2023"
+      ],
+      "tags": [
+        "music"
+      ]
+    },
+    {
+      "category": "Community Service",
+      "title": "3x Gold President's Volunteer Service Award",
+      "years": [
+        "2023",
+        "2024",
+        "2025"
+      ]
+    }
+  ],
+  "impact_numbers": [
+    {
+      "value": 30000,
+      "suffix": "+",
+      "label": "students taught STEM for free",
+      "source": "Science Chronicles"
+    },
+    {
+      "value": 160000,
+      "suffix": "+",
+      "label": "article reads",
+      "source": "Science Chronicles"
+    },
+    {
+      "value": 350000,
+      "prefix": "$",
+      "suffix": "+",
+      "label": "in free test prep distributed",
+      "source": "Science Chronicles"
+    },
+    {
+      "value": 20000,
+      "suffix": "+",
+      "label": "first-gen students taught their native language",
+      "source": "Language Gurus"
+    },
+    {
+      "value": 1000,
+      "suffix": "+",
+      "label": "cancer patients assisted",
+      "source": "MSK"
+    },
+    {
+      "value": 80000,
+      "prefix": "$",
+      "suffix": "+",
+      "label": "raised for nonprofits",
+      "source": "Student Government"
+    }
+  ],
+  "papers": [
+    {
+      "id": "venezuela",
+      "title": "La democracia inalcanzable: Venezuela entre el deseo y el despojo",
+      "title_en": "The Unattainable Democracy: Venezuela Between Desire and Dispossession",
+      "language": "Spanish",
+      "related_org": "Independent Spanish Study",
+      "advisors": [
+        "Robert Weldon, Spanish Teacher, Scarsdale High School"
+      ],
+      "status": "Unpublished research paper",
+      "tags": [
+        "research",
+        "history",
+        "languages"
+      ],
+      "abstract": {
+        "es": "Este ensayo examina los fundamentos históricos, institucionales y culturales de la crisis democrática venezolana, argumentando que el actual régimen autoritario no es una anomalía reciente, sino la culminación de patrones estructurales de larga duración. Sostiene que la erosión de la democracia resulta de la confluencia de cuatro dimensiones: la herencia colonial marcada por la exclusión y la centralización; la captura y politización del poder judicial como herramienta de represión; la instauración de un modelo económico rentista que concentra poder y fomenta la dependencia; y la consolidación del control estatal sobre la información a través de la censura y la cooptación mediática. Mediante un análisis histórico e institucional, el artículo revela cómo estos factores se entrelazan para sostener un ciclo autoritario autorreforzante, caracterizado por impunidad y silencio. Partiendo de la advertencia del ex-diplomático venezolano Juan Pablo Pérez Alfonzo sobre la necesidad de claridad para exponer y resolver los conflictos, se concluye que el colapso democrático en Venezuela deriva del rechazo sistemático a dicha claridad. Recuperar la democracia exige, por tanto, desmontar las jerarquías heredadas, restaurar la independencia judicial, restablecer el pluralismo informativo y reconstruir una esfera pública donde el conflicto pueda ser expresado y resuelto mediante la deliberación, y no por la imposición.",
+        "en": "This paper examines the historical, institutional, and cultural foundations of Venezuela’s democratic crisis, arguing that the current authoritarian regime is not a recent deviation but the culmination of enduring structural patterns. It contends that the erosion of democracy results from the convergence of four dimensions: colonial legacies of exclusion and centralization, the capture and politicization of the judiciary as a tool of repression, the establishment of a rentier economic model that concentrates power and fosters dependency, and the consolidation of state control over information through censorship and media cooptation. Through historical and institutional analysis, the paper reveals how these factors intertwine to sustain a self-reinforcing cycle of authoritarianism, impunity, and silence. Building on the warning of former Venezuelan diplomat Juan Pablo Pérez Alfonzo that democracy depends on the capacity to expose and resolve conflicts openly, the study concludes that Venezuela’s democratic collapse stems from the systemic denial of that clarity. Recovering democracy, therefore, requires dismantling inherited hierarchies, restoring judicial independence, reestablishing informational pluralism, and rebuilding a public sphere where conflict can be expressed and resolved through deliberation rather than suppression."
+      }
+    },
+    {
+      "id": "colonialism",
+      "title": "A Nation in Reckoning: The Promise and Peril of Indian Unity",
+      "language": "English",
+      "related_org": "Independent History Study",
+      "advisors": [
+        "Mrinalini Sinha, Alice Freeman Palmer Professor of History, University of Michigan, LSA Department of History",
+        "Andrew Morgan, Research Advisor, Scarsdale High School"
+      ],
+      "status": "Unpublished research paper",
+      "tags": [
+        "research",
+        "history"
+      ],
+      "abstract": {
+        "en": "This paper examines how British colonial rule transformed India's fluid and overlapping identities into rigid and politicized categories, laying the groundwork for enduring ethnic and religious conflict. Tracing a historical arc from the Mughal Empire through the East India Company, British Raj, and postcolonial India, the paper argues that colonial governance systematically institutionalized division—through censuses, legal pluralism, and separate electorates—turning difference into a mechanism of control. The analysis demonstrates how these structures persisted beyond independence, repurposed by modern Indian governments to manage citizenship, law, and social hierarchy. Drawing on case studies such as the Partition, the National Register of Citizens (NRC), and the Ayodhya dispute, the paper contends that India’s contemporary crises of unity are not relics of ancient religious enmity but the legacy of a colonial state that weaponized identity. Ultimately, it calls for a reimagining of national belonging beyond inherited boundaries, urging a decolonization of both institutions and imagination."
+      }
+    },
+    {
+      "id": "pcos",
+      "title": "Decoding A Syndrome: Uncovering Genetic Substructure in PCOS Using PCA, Hierarchical Clustering, and LD-Pruned Genotyping Data",
+      "language": "English",
+      "related_org": "Icahn School of Medicine at Mount Sinai",
+      "advisors": [
+        "Kelly Brewer, Research Mentor, Icahn School of Medicine at Mount Sinai",
+        "Andrea Dunaif, Research Mentor, Icahn School of Medicine at Mount Sinai"
+      ],
+      "status": "Unpublished research paper; submitted to the Regeneron Science Talent Search",
+      "tags": [
+        "research",
+        "science",
+        "ai",
+        "health"
+      ],
+      "abstract": {
+        "en": "Polycystic ovary syndrome (PCOS) is a prevalent endocrine disorder with complex genetic and environmental etiologies, disproportionately affecting women across diverse ancestral backgrounds. Despite extensive research, the genetic architecture underlying PCOS heterogeneity remains poorly understood, especially in underrepresented minority populations. This study investigates the genomic substructure of PCOS within a United States cohort of 940 subjects, which includes significant racial diversity. Utilizing high-quality genotype data, we performed stringent linkage disequilibrium pruning and applied principal component analysis (PCA) to reduce dimensionality and capture major axes of genetic variation. Unsupervised clustering via k-means and hierarchical methods revealed no stable or reproducible genetic subtypes, corroborated by overlapping cluster visualizations. Linear regression analyses showed no significant associations between genotype-derived principal components and clinical phenotypes such as BMI, LH/FSH ratio, AMH, and insulin levels after multiple testing correction. Our findings suggest that common germline variants do not segregate PCOS subtypes within this cohort, reinforcing the polygenic nature of the disorder and underscoring the critical role of environmental and multi-omic contributors to disease heterogeneity. This work highlights the importance of inclusive genomic research in diverse populations and provides a foundational framework for future multidimensional investigations into PCOS pathogenesis."
+      }
+    }
+  ],
+  "explainers": {
+    "pcos": {
+      "title": "How the PCOS model sorts patients into subtypes",
+      "note": "Illustrative values and dots only. No patient data.",
+      "intro": "The model combines a patient's clinical measurements with genetic data to place them in a subtype. Move the sliders, or pick an example patient, to see where they land.",
+      "traits": [
+        {
+          "id": "bmi",
+          "label": "BMI",
+          "axis": "metabolic",
+          "min": 18,
+          "max": 45,
+          "unit": ""
+        },
+        {
+          "id": "insulin",
+          "label": "Fasting insulin",
+          "axis": "metabolic",
+          "min": 2,
+          "max": 40,
+          "unit": " µIU/mL"
+        },
+        {
+          "id": "lh",
+          "label": "LH (luteinizing hormone)",
+          "axis": "reproductive",
+          "min": 2,
+          "max": 30,
+          "unit": " IU/L"
+        },
+        {
+          "id": "shbg",
+          "label": "SHBG (sex hormone–binding globulin)",
+          "axis": "reproductive",
+          "min": 10,
+          "max": 90,
+          "unit": " nmol/L"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Patient A",
+          "values": {
+            "bmi": 23,
+            "insulin": 6,
+            "lh": 24,
+            "shbg": 70
+          }
+        },
+        {
+          "label": "Patient B",
+          "values": {
+            "bmi": 38,
+            "insulin": 32,
+            "lh": 7,
+            "shbg": 18
+          }
+        },
+        {
+          "label": "Patient C",
+          "values": {
+            "bmi": 29,
+            "insulin": 16,
+            "lh": 14,
+            "shbg": 42
+          }
+        }
+      ],
+      "subtypes": {
+        "reproductive": {
+          "label": "Reproductive",
+          "text": "Higher LH and SHBG, with lower BMI and insulin. Hormone-driven features stand out."
+        },
+        "metabolic": {
+          "label": "Metabolic",
+          "text": "Higher BMI and insulin, with lower SHBG and LH. Metabolic features stand out."
+        },
+        "indeterminate": {
+          "label": "Indeterminate",
+          "text": "No clear pattern either way, so the model doesn't force a label."
+        }
+      },
+      "footnote": "Genetic data alone didn't separate subtypes in my study (see the reading room). Combining it with clinical measurements is what makes the sorting work."
+    },
+    "glioblastoma": {
+      "title": "TGF-β signaling in glioblastoma: the pathway and the genes around it",
+      "lab": "Lopez-Bertoni Lab · Johns Hopkins Medicine",
+      "intro": "Bottom row: how a TGF-β signal travels from the ligands through the two receptors into the cell. Top: genes whose expression rises and falls with each receptor across glioblastoma cohorts. Hover or tap anything.",
+      "note": "Illustrative layout, not study results.",
+      "groups": [
+        {
+          "id": "r1",
+          "label": "TGFBR1-specific",
+          "text": "Genes correlated with TGFBR1 but not TGFBR2. ssGSEA tests whether they share receptor-specific metabolic pathways."
+        },
+        {
+          "id": "shared",
+          "label": "Shared programs",
+          "text": "Genes correlated with both receptors. These point to cancer-related programs common to the whole pathway."
+        },
+        {
+          "id": "r2",
+          "label": "TGFBR2-specific",
+          "text": "Genes correlated with TGFBR2 but not TGFBR1: candidates for a TGFBR2 signature to test in knockout experiments."
+        }
+      ],
+      "nodes": [
+        {
+          "id": "TGFB1",
+          "group": "ligand",
+          "role": "Signaling protein (ligand) that starts the pathway by binding the receptors."
+        },
+        {
+          "id": "TGFB2",
+          "group": "ligand",
+          "role": "A second TGF-β ligand, closely related to TGFB1."
+        },
+        {
+          "id": "TGFBR2",
+          "group": "receptor",
+          "role": "Type II receptor. It binds the ligand first, then activates TGFBR1."
+        },
+        {
+          "id": "TGFBR1",
+          "group": "receptor",
+          "role": "Type I receptor. Once activated by TGFBR2, it passes the signal into the cell."
+        },
+        {
+          "id": "SMAD2",
+          "group": "messenger",
+          "role": "Messenger protein switched on by TGFBR1."
+        },
+        {
+          "id": "SMAD3",
+          "group": "messenger",
+          "role": "Partner of SMAD2, also switched on by TGFBR1."
+        },
+        {
+          "id": "SMAD4",
+          "group": "messenger",
+          "role": "Joins SMAD2/3 and carries the signal into the nucleus."
+        },
+        {
+          "id": "SMAD7",
+          "group": "messenger",
+          "role": "Brake on the pathway: blocks TGFBR1 signaling."
+        },
+        {
+          "id": "SERPINE1",
+          "group": "target",
+          "role": "Example gene turned on by the pathway."
+        },
+        {
+          "id": "Mesenchymal genes",
+          "group": "target",
+          "role": "A set of genes linked to the aggressive mesenchymal glioblastoma subtype."
+        }
+      ],
+      "links": [
+        [
+          "TGFB1",
+          "TGFBR2"
+        ],
+        [
+          "TGFB2",
+          "TGFBR2"
+        ],
+        [
+          "TGFBR2",
+          "TGFBR1"
+        ],
+        [
+          "TGFBR1",
+          "SMAD2"
+        ],
+        [
+          "TGFBR1",
+          "SMAD3"
+        ],
+        [
+          "SMAD2",
+          "SMAD4"
+        ],
+        [
+          "SMAD3",
+          "SMAD4"
+        ],
+        [
+          "SMAD7",
+          "TGFBR1"
+        ],
+        [
+          "SMAD4",
+          "SERPINE1"
+        ],
+        [
+          "SMAD4",
+          "Mesenchymal genes"
+        ],
+        [
+          "TGFBR2",
+          "Mesenchymal genes"
+        ]
+      ]
+    }
+  },
+  "places": [
+    {
+      "name": "Baltimore",
+      "lat": 39.29,
+      "lon": -76.61,
+      "kind": "worked",
+      "items": [
+        "Johns Hopkins University",
+        "Lopez-Bertoni Lab, Johns Hopkins Medicine",
+        "Baltimore City Health Department"
+      ]
+    },
+    {
+      "name": "New York",
+      "lat": 40.71,
+      "lon": -74.01,
+      "kind": "worked",
+      "items": [
+        "Icahn School of Medicine at Mount Sinai",
+        "Memorial Sloan Kettering Cancer Center",
+        "Afro Latin Jazz Alliance"
+      ]
+    },
+    {
+      "name": "Westchester",
+      "lat": 41.0,
+      "lon": -73.78,
+      "kind": "worked",
+      "items": [
+        "Science Chronicles",
+        "Language Gurus",
+        "Scarsdale Board of Education"
+      ]
+    },
+    {
+      "name": "Ann Arbor",
+      "lat": 42.28,
+      "lon": -83.74,
+      "kind": "worked",
+      "items": [
+        "University of Michigan, Department of History"
+      ]
+    },
+    {
+      "name": "San Francisco",
+      "lat": 37.77,
+      "lon": -122.42,
+      "kind": "worked",
+      "items": [
+        "Extempify"
+      ]
+    },
+    {
+      "name": "Caribbean",
+      "lat": 10.69,
+      "lon": -61.22,
+      "kind": "studied",
+      "items": [
+        "Indian diaspora research"
+      ]
+    },
+    {
+      "name": "South Africa",
+      "lat": -29.86,
+      "lon": 31.02,
+      "kind": "studied",
+      "items": [
+        "Indian diaspora research"
+      ]
+    },
+    {
+      "name": "Venezuela",
+      "lat": 10.48,
+      "lon": -66.9,
+      "kind": "studied",
+      "items": [
+        "Paper on Venezuelan democracy (in Spanish)"
+      ]
+    },
+    {
+      "name": "Catalonia",
+      "lat": 41.39,
+      "lon": 2.17,
+      "kind": "studied",
+      "items": [
+        "Paper on the Catalan independence movement (in Spanish)"
+      ]
+    },
+    {
+      "name": "India",
+      "lat": 22.5,
+      "lon": 79.0,
+      "kind": "studied",
+      "items": [
+        "Paper on British colonialism and Indian unity"
+      ]
+    }
+  ]
+}

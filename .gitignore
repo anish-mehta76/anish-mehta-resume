@@ -1,0 +1,11 @@
+node_modules
+dist
+.DS_Store
+
+# Private data: never commit
+content/private.json
+
+# Source documents (resume PDF has the phone number) and unpublished lab results
+/*.pdf
+/*.png
+/*.csv
