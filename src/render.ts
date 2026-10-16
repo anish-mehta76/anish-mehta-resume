@@ -525,7 +525,7 @@ function quickView(r: Resume, groups: { lead: Entry[]; debate: Entry[] }): strin
 /* ---------- Page ---------- */
 
 export function renderHead(r: Resume): string {
-  const title = `${r.person.name}: Public Health & Chemistry`;
+  const title = r.person.name;
   const desc = r.person.tagline;
   return `
     <title>${esc(title)}</title>
