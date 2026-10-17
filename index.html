@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Apply a saved theme choice before first paint (no flash). Otherwise the system setting wins.
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <!--head-->
     <script type="module" src="/src/main.ts"></script>

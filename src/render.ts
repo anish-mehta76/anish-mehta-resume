@@ -608,6 +608,10 @@ export function renderBody(r: Resume): string {
       <nav class="topbar__nav" aria-label="Sections">
         <ul data-nav>${[...order, 'contact'].map((id) => `<li data-nav-item="${id}"><a href="#${id}">${SECTION_LABELS[id] ?? 'Contact'}</a></li>`).join('')}</ul>
       </nav>
+      <button type="button" class="theme-toggle js-only" data-theme-toggle aria-label="Switch to dark theme">
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+      </button>
       <a class="btn btn--small topbar__qv topbar__qv--open" href="#quick-view">Quick View</a>
       <a class="btn btn--small topbar__qv topbar__qv--close" href="#top">Full site</a>
     </div>

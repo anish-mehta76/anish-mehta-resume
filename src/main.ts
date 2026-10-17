@@ -18,6 +18,33 @@ const press = (all: Element[], on: Element) => all.forEach((b) => b.setAttribute
 // Download PDF -> print stylesheet (the Quick View).
 $$<HTMLButtonElement>('[data-print]').forEach((b) => b.addEventListener('click', () => window.print()));
 
+/* ---------- Light / dark theme toggle ---------- */
+const themeBtn = $<HTMLButtonElement>('[data-theme-toggle]');
+const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+const themeMeta = $<HTMLMetaElement>('meta[name="theme-color"]');
+const currentTheme = () => (root.dataset.theme as 'light' | 'dark' | undefined) ?? (systemDark.matches ? 'dark' : 'light');
+function syncThemeButton() {
+  const t = currentTheme();
+  if (themeBtn) {
+    themeBtn.dataset.current = t;
+    themeBtn.setAttribute('aria-label', `Switch to ${t === 'dark' ? 'light' : 'dark'} theme`);
+    themeBtn.title = themeBtn.getAttribute('aria-label')!;
+  }
+  themeMeta?.setAttribute('content', t === 'dark' ? '#061a3a' : '#002d72');
+}
+themeBtn?.addEventListener('click', () => {
+  const next = currentTheme() === 'dark' ? 'light' : 'dark';
+  root.dataset.theme = next;
+  try {
+    localStorage.setItem('theme', next);
+  } catch {
+    /* private mode: the choice just won't be remembered */
+  }
+  syncThemeButton();
+});
+systemDark.addEventListener('change', syncThemeButton);
+syncThemeButton();
+
 /* ---------- Intro language switch ---------- */
 const intro = $('[data-intro]');
 $$<HTMLButtonElement>('[data-intro-lang]').forEach((btn, _, all) =>

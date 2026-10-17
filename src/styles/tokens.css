@@ -1,6 +1,7 @@
 /* Johns Hopkins palette: Heritage Blue #002D72 (light accent), Spirit Blue #68ACE5 (dark accent).
    Every color, font, space and motion value on the site comes from here. */
 :root {
+  color-scheme: light;
   --jhu-heritage: #002d72;
   --jhu-spirit: #68ace5;
   --color-bg: #f6f8fb;
@@ -38,8 +39,20 @@
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
+/* Data-viz colors (placeholder, follow the chosen direction later). */
+:root {
+  --viz-1: #2f7fc8;
+  --viz-2: #c2410c;
+  --viz-3: #7c3aed;
+  --viz-neutral: #93a1b5;
+  --map-land: #d3dcea;
+}
+
+/* Dark theme (deep Heritage navy, Spirit Blue accent): follows the system setting
+   unless the visitor picks a theme with the toggle (html[data-theme]). */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
     --color-bg: #061a3a;
     --color-surface: #0c2550;
     --color-text: #eef3fa;
@@ -50,23 +63,28 @@
     --color-accent-contrast: #04152f;
     --color-accent-soft: #11305e;
     --color-focus: #fbbf24;
-  }
-}
-
-/* Data-viz colors (placeholder, follow the chosen direction later). */
-:root {
-  --viz-1: #2f7fc8;
-  --viz-2: #c2410c;
-  --viz-3: #7c3aed;
-  --viz-neutral: #93a1b5;
-  --map-land: #d3dcea;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
     --viz-1: #8cc4f0;
     --viz-2: #fb923c;
     --viz-3: #c4b5fd;
     --viz-neutral: #6d82a3;
     --map-land: #1c3561;
   }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #061a3a;
+  --color-surface: #0c2550;
+  --color-text: #eef3fa;
+  --color-muted: #a9b8cf;
+  --color-border: #1e3a66;
+  --color-accent: #68ace5;
+  --color-heading: #ffffff;
+  --color-accent-contrast: #04152f;
+  --color-accent-soft: #11305e;
+  --color-focus: #fbbf24;
+  --viz-1: #8cc4f0;
+  --viz-2: #fb923c;
+  --viz-3: #c4b5fd;
+  --viz-neutral: #6d82a3;
+  --map-land: #1c3561;
 }
