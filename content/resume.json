@@ -21,7 +21,8 @@
       "Venezuela paper is 7,500 words; British colonialism paper is 10,000 words (from abstracts).",
       "PCOS: the diagnosis model was adopted. The explainer shows clinical + genetic data mapped to Reproductive vs Metabolic subtypes; the abstract's genetics-only finding stays in the reading room.",
       "Glioblastoma graphic approved for the public site (2026-10-16).",
-      "Intro translations (Hindi, Spanish, Catalan) published at Anish's request (2026-10-17)."
+      "Intro translations (Hindi, Spanish, Catalan) published at Anish's request (2026-10-17).",
+      "Paper status lines (unpublished / Regeneron STS submission) removed from the site at Anish's request (2026-10-17)."
     ],
     "drafts_note": "Anything with \"draft\": true shows in `npm run dev` with a DRAFT badge and is left out of the published build until Anish approves it.",
     "privacy": "Private fields (phone) live in content/private.json, which is gitignored and never rendered.",
@@ -538,7 +539,6 @@
       "advisors": [
         "Robert Weldon, Spanish Teacher, Scarsdale High School"
       ],
-      "status": "Unpublished research paper",
       "tags": [
         "research",
         "history",
@@ -558,7 +558,6 @@
         "Mrinalini Sinha, Alice Freeman Palmer Professor of History, University of Michigan, LSA Department of History",
         "Andrew Morgan, Research Advisor, Scarsdale High School"
       ],
-      "status": "Unpublished research paper",
       "tags": [
         "research",
         "history"
@@ -576,7 +575,6 @@
         "Kelly Brewer, Research Mentor, Icahn School of Medicine at Mount Sinai",
         "Andrea Dunaif, Research Mentor, Icahn School of Medicine at Mount Sinai"
       ],
-      "status": "Unpublished research paper; submitted to the Regeneron Science Talent Search",
       "tags": [
         "research",
         "science",

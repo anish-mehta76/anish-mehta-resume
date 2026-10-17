@@ -86,7 +86,6 @@ export interface Paper {
   language: string;
   related_org: string;
   advisors: string[];
-  status: string;
   tags: string[];
   abstract: { en: string; es?: string };
 }

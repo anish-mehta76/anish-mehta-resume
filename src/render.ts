@@ -342,7 +342,6 @@ function paperCard(p: Paper): string {
       <p class="paper__meta"><span>${esc(p.related_org)}</span>${isSpanish ? '<span class="paper__lang">Written in Spanish</span>' : ''}</p>
       <h3 class="paper__title"${isSpanish ? ' lang="es"' : ''}>${esc(p.title)}</h3>
       ${p.title_en ? `<p class="paper__title-en">${esc(p.title_en)}</p>` : ''}
-      <p class="paper__status">${esc(p.status)}</p>
       <p class="paper__advisors">Advised by ${p.advisors.map(esc).join('; ')}</p>
       ${original}
     </article>`;
