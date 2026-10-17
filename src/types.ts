@@ -62,6 +62,21 @@ export interface Resume {
   papers?: Paper[];
   explainers?: { pcos?: PcosExplainer; glioblastoma?: GbmExplainer };
   places?: Place[];
+  media?: {
+    headshot?: Photo;
+    school_logo?: { src: string; alt: string };
+    music?: Photo;
+    voice?: Photo;
+  };
+}
+
+export interface Photo {
+  src: string;
+  widths: number[];
+  width: number;
+  height: number;
+  alt: string;
+  caption?: string;
 }
 
 export interface Paper {

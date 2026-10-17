@@ -25,7 +25,8 @@
       "Glioblastoma graphic approved for the public site (2026-10-16)."
     ],
     "drafts_note": "Anything with \"draft\": true shows in `npm run dev` with a DRAFT badge and is left out of the published build until Anish approves it.",
-    "privacy": "Private fields (phone) live in content/private.json, which is gitignored and never rendered."
+    "privacy": "Private fields (phone) live in content/private.json, which is gitignored and never rendered.",
+    "media_note": "Originals live in images/ (gitignored: they contain EXIF/GPS). Run `npm run images` to regenerate public/media/."
   },
   "person": {
     "name": "Anish Mehta",
@@ -894,5 +895,43 @@
         "Paper on British colonialism and Indian unity"
       ]
     }
-  ]
+  ],
+  "media": {
+    "headshot": {
+      "src": "media/headshot",
+      "widths": [
+        320,
+        640
+      ],
+      "width": 640,
+      "height": 800,
+      "alt": "Headshot of Anish Mehta smiling, in a gray suit and red tie"
+    },
+    "school_logo": {
+      "src": "media/jhu-shield-96.webp",
+      "alt": "Johns Hopkins University shield"
+    },
+    "music": {
+      "src": "media/saxophone",
+      "widths": [
+        480,
+        960
+      ],
+      "width": 960,
+      "height": 1332,
+      "alt": "Anish playing saxophone on stage under purple lights",
+      "caption": "On saxophone"
+    },
+    "voice": {
+      "src": "media/debate-trophy",
+      "widths": [
+        480,
+        960
+      ],
+      "width": 960,
+      "height": 1280,
+      "alt": "Anish in a suit holding a gold horse trophy",
+      "caption": "With a speech & debate trophy"
+    }
+  }
 }

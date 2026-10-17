@@ -1,4 +1,4 @@
-import type { Entry, GbmExplainer, Honor, ImpactNumber, Paper, PcosExplainer, Place, Resume } from './types';
+import type { Photo, Entry, GbmExplainer, Honor, ImpactNumber, Paper, PcosExplainer, Place, Resume } from './types';
 import { SECTION_LABELS, SECTION_ORDER } from './sections';
 import { CHART, scores, toChart } from './pcos';
 import { landDotsPath, mapHeight, MAP, project } from './build/worldDots';
@@ -77,13 +77,31 @@ function introSwitch(r: Resume): string {
   </div>`;
 }
 
+function photo(ph: Photo, cls: string, sizes: string, eager = false): string {
+  const srcset = ph.widths.map((w) => `${esc(ph.src)}-${w}.webp ${w}w`).join(', ');
+  const largest = ph.widths[ph.widths.length - 1];
+  const img = `<img src="${esc(ph.src)}-${largest}.webp" srcset="${srcset}" sizes="${sizes}" width="${ph.width}" height="${ph.height}" alt="${esc(ph.alt)}" ${
+    eager ? 'fetchpriority="high"' : 'loading="lazy"'
+  } decoding="async" />`;
+  return `<figure class="${cls}">${img}${ph.caption ? `<figcaption>${esc(ph.caption)}</figcaption>` : ''}</figure>`;
+}
+
+/** Puts a photo beside a section's content when one is configured. */
+const withPhoto = (inner: string, ph?: Photo) =>
+  ph ? `<div class="with-photo"><div class="with-photo__main">${inner}</div>${photo(ph, 'side-photo', '(max-width: 760px) 90vw, 320px')}</div>` : inner;
+
 function hero(r: Resume): string {
   const p = r.person;
   const jhu = r.education[0];
+  const logo = r.media?.school_logo;
+  const headshot = r.media?.headshot;
   return `
   <section id="hero" class="hero" aria-labelledby="hero-name">
-    <div class="section__inner">
-      <p class="hero__edu">${esc(jhu.school)} · ${esc(jhu.display_dates ?? dates(jhu.start, jhu.end))}</p>
+    <div class="section__inner hero__grid">
+      <div class="hero__text">
+      <p class="hero__edu">${
+        logo ? `<img class="hero__logo" src="${esc(logo.src)}" alt="${esc(logo.alt)}" width="28" height="28" />` : ''
+      }<span>${esc(jhu.school)} · ${esc(jhu.display_dates ?? dates(jhu.start, jhu.end))}</span></p>
       <h1 id="hero-name" class="hero__name">${esc(p.name)}</h1>
       ${jhu.degrees ? `<p class="hero__degrees">${jhu.degrees.map(esc).join(' · ')}</p>` : ''}
       <p class="hero__tagline" lang="en" data-intro aria-live="polite">${esc(p.tagline)}</p>
@@ -93,6 +111,8 @@ function hero(r: Resume): string {
         <span class="hero__links"><a href="#quick-view">Quick View</a><button class="linklike js-only" type="button" data-print>Download PDF</button></span>
       </div>
       ${introSwitch(r)}
+      </div>
+      ${headshot ? photo(headshot, 'hero__photo', '(max-width: 760px) 140px, 320px', true) : ''}
     </div>
   </section>`;
 }
@@ -533,7 +553,7 @@ export function renderHead(r: Resume): string {
     <meta property="og:type" content="website" />
     <meta property="og:title" content="${esc(title)}" />
     <meta property="og:description" content="${esc(desc)}" />
-    <meta name="theme-color" content="#14532d" />`;
+    <meta name="theme-color" content="#002d72" />`;
 }
 
 export function renderBody(r: Resume): string {
@@ -555,14 +575,17 @@ export function renderBody(r: Resume): string {
     voice: section(
       'voice',
       'Voice',
-      `${entries(debate)}<h3 class="sub">Speech & Debate record</h3><ul class="honors">${debateHonors.map(honorItem).join('')}</ul>`,
+      withPhoto(`${entries(debate)}<h3 class="sub">Speech & Debate record</h3><ul class="honors">${debateHonors.map(honorItem).join('')}</ul>`, r.media?.voice),
       'Speech & debate',
     ),
     music: section(
       'music',
       'Music',
-      `${entries(music)}${musicHonors.length ? `<ul class="honors">${musicHonors.map(honorItem).join('')}</ul>` : ''}
+      withPhoto(
+        `${entries(music)}${musicHonors.length ? `<ul class="honors">${musicHonors.map(honorItem).join('')}</ul>` : ''}
        ${work.length ? `<h3 class="sub">Work</h3>${entries(work)}` : ''}`,
+        r.media?.music,
+      ),
       'Jazz saxophone',
     ),
     timeline: timeline(r, [

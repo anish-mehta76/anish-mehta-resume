@@ -9,3 +9,6 @@ content/private.json
 /*.pdf
 /*.png
 /*.csv
+
+# Original photos (EXIF/GPS). Processed copies are in public/media/
+images/
