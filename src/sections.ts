@@ -7,7 +7,7 @@ export const SECTION_LABELS: Record<string, string> = {
   service: 'Service',
   reach: 'Reach',
   leadership: 'Leadership',
-  voice: 'Voice',
+  voice: 'Debate',
   music: 'Music',
   timeline: 'Timeline',
   honors: 'Honors',

@@ -897,10 +897,11 @@
       "src": "media/headshot",
       "widths": [
         320,
-        640
+        640,
+        960
       ],
-      "width": 640,
-      "height": 800,
+      "width": 960,
+      "height": 1200,
       "alt": "Headshot of Anish Mehta smiling, in a gray suit and red tie"
     },
     "school_logo": {
@@ -915,8 +916,7 @@
       ],
       "width": 960,
       "height": 1332,
-      "alt": "Anish playing saxophone on stage under purple lights",
-      "caption": "On saxophone"
+      "alt": "Anish playing saxophone on stage under purple lights"
     },
     "voice": {
       "src": "media/debate-trophy",
@@ -926,8 +926,7 @@
       ],
       "width": 960,
       "height": 1280,
-      "alt": "Anish in a suit holding a gold horse trophy",
-      "caption": "With a speech & debate trophy"
+      "alt": "Anish in a suit holding a gold horse trophy"
     }
   }
 }

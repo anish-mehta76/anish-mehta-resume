@@ -533,7 +533,7 @@ function quickView(r: Resume, groups: { lead: Entry[]; debate: Entry[] }): strin
         ${block('papers', 'Papers', paperList)}
         ${block('service', 'Service', items(r.service))}
         ${block('leadership', 'Leadership', items(groups.lead))}
-        ${block('voice', 'Speech & Debate', items(groups.debate))}
+        ${block('voice', 'Speech and Debate', items(groups.debate))}
         ${block('music', 'Music & Work', items(r.music_and_work))}
         ${block('honors', 'Honors & Awards', byCat)}
         ${block('languages', 'Languages', `<p>${r.person.languages.map(esc).join(', ')}</p>`)}
@@ -574,9 +574,8 @@ export function renderBody(r: Resume): string {
     leadership: section('leadership', 'Leadership', entries(lead), 'Student government & clubs'),
     voice: section(
       'voice',
-      'Voice',
-      withPhoto(`${entries(debate)}<h3 class="sub">Speech & Debate record</h3><ul class="honors">${debateHonors.map(honorItem).join('')}</ul>`, r.media?.voice),
-      'Speech & debate',
+      'Speech and Debate',
+      withPhoto(`${entries(debate)}<h3 class="sub">Record</h3><ul class="honors">${debateHonors.map(honorItem).join('')}</ul>`, r.media?.voice),
     ),
     music: section(
       'music',
@@ -592,7 +591,7 @@ export function renderBody(r: Resume): string {
       ['Research', r.research],
       ['Service', r.service],
       ['Leadership', lead],
-      ['Voice', debate],
+      ['Debate', debate],
       ['Music', music],
     ]),
     honors: honors(r),

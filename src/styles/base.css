@@ -145,7 +145,7 @@ html.js.motion-ok .reveal.is-in { opacity: 1; transform: none; }
 @media (max-width: 760px) {
   .hero__grid { grid-template-columns: 1fr; gap: var(--space-4); }
   .hero__photo { order: -1; width: 128px; }
-  .hero__photo img { border-radius: 50%; aspect-ratio: 1; object-fit: cover; object-position: 50% 20%; box-shadow: 0 0 0 4px var(--jhu-spirit); }
+  .hero__photo img { border-radius: 50%; aspect-ratio: 1; object-fit: cover; object-position: 50% 30%; box-shadow: 0 0 0 4px var(--jhu-spirit); }
 }
 
 .with-photo { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: var(--space-5); align-items: start; }
