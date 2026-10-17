@@ -13,7 +13,7 @@ mkdirSync(OUT, { recursive: true });
 // crop: region in the upright (EXIF-rotated) original. widths: output sizes.
 const jobs = [
   { src: 'images/IMG_8446.heic', name: 'headshot', crop: { left: 120, top: 720, width: 960, height: 1200 }, widths: [320, 640, 960], quality: 86, sharpen: true },
-  { src: 'images/IMG_0353.JPEG', name: 'saxophone', crop: { left: 820, top: 300, width: 1960, height: 2400 }, widths: [480, 960] },
+  { src: 'images/IMG_0353.JPEG', name: 'saxophone', crop: { left: 1000, top: 300, width: 2480, height: 2500 }, widths: [480, 960] },
   { src: 'images/IMG_7743.JPEG', name: 'debate-trophy', crop: { left: 626, top: 900, width: 1800, height: 2400 }, widths: [480, 960] },
   { src: 'images/jhu_shield.jpg', name: 'jhu-shield', crop: { left: 95, top: 25, width: 260, height: 260 }, widths: [96] },
 ];
